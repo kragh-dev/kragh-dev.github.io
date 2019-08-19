@@ -1,24 +1,77 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="css/master.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Navbar</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-  <div class="prof-box">
-    <img src="images/profile.jpg" class="prof-pic">
-    <h1>Kaarthikeyan</h1>
-    <h4>Developer | Designer | Editor</h4>
-    <div class="line-break"></div> 
-    <p>
-      I am a Software Engineer, Developer and Designer currently living in Saligramam, India. My interests range from technology to photography. I am also interested in music, entrepreneurship, and design.
-    </p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/kaarthik.raghavan" target="_blank"><i class="fa fa-facebook-square"></i></a>
-      <a href="https://www.twitter.com/kaarthikeyan23" target="_blank"><i class="fa fa-twitter-square"></i></a>
-      <a href="https://www.instagram.com/kragh_dev" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="http://www.kragh.xyz" target="_blank"><i class="fa fa-globe"></i></a>
+    <div>
+        <header>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <nav class="nav_links" id="myNav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav>
+        </header>
     </div>
-  </div>
+    <div class="blank_space"></div>
+    <div class="profile_home">
+        <div class="split profile">
+            <div class="centered">
+                <img src="images/profile.jpg" class="prof-pic" alt="Avatar woman">
+                <h3>Kaarthikeyan</h3>
+                <h5>Developer | Designer | Editor</h5>
+                <div class="line-break" style="text-align: center"></div>
+                <h6 style="text-align: center">I am a Software Engineer, Developer and Designer currently living in Saligramam, India. My interests range from technology to photography. I am also interested in music, entrepreneurship, and design. </h6>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-main-div">
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://www.facebook.com/kaarthik.raghavan" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.twitter.com/kaarthikeyan23" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/kragh_dev" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="http://www.kragh.xyz" target="_blank"><i class="fa fa-globe"></i></a></li>
+                </ul>
+            </div>
+            <div class="line-break"></div> 
+        </div>
+        <div class="footer-main-menu">
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Skills</a></li>
+                    <li><a href="#" target="_blank">Interests</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-main-credit">
+            <div class="footer-credit">
+                Created with   <i class="fa fa-heart" style="color: red"></i>   by Kaarthikeyan
+            </div>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myNav");
+        if (x.className === "nav_links") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav_links";
+        }
+        }
+    </script>
 </body>
 </html>
